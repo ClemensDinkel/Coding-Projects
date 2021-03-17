@@ -1,0 +1,81 @@
+html,body {
+    font-size: 24px;
+    font-family: "Roboto Mono", Arial;
+    color: rgb(77, 167, 85);
+    background-image: url(stars.png);
+}
+
+header {
+    text-align: center;
+    font-weight: 900;
+}
+
+main {
+    display: flex;
+}
+
+article {
+    clear: both;
+}
+
+footer {
+    font-size: 22px;
+    text-align: center;
+    font-weight: 900;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: rgb(148, 36, 36);
+}
+
+a:visited {
+    color: rgb(139, 65, 65);
+}
+
+a:hover {
+    color: rgb(141, 0, 0);
+}
+
+.blog-posts {
+    text-align: justify;
+}
+
+.blog-posts h1, h2, h3 {
+    text-align: center;
+}
+
+.image-container-left {
+    float: left;
+    margin-right:20px;
+    height: 290px;
+}
+
+.image-container-right {
+    float: right;
+    margin-left: 20px;
+    height: 290px;
+}
+
+.left {
+    width: 240px;
+    text-align: left;
+    margin: 20px;
+    flex-grow: 0;
+}
+
+.link {
+    padding: 20px;
+}
+
+.mid-right {
+    flex-grow: 1;
+    margin: 20px;
+}
