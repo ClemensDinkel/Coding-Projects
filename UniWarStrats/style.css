@@ -31,16 +31,17 @@ header {
 
 .link {
     padding: 0 20px;
-    font-size:xx-large;
+    font-size:x-large;
     border: 1px;
     border-style: solid;
     border-radius: 10px;
+    margin: 2px;
 }
 
 nav {
     align-content: center;
     font-weight: 900;
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
 
 h1 {
@@ -50,10 +51,11 @@ h1 {
 .shortcut {
     display: inline-block;
     position: relative;
-    padding: 0 20px;
+    padding: 0 10px;
     border: 1px;
     border-style: solid;
     border-radius: 10px;
+    margin: 2px;
 }
 
 .shortcut h2 {
@@ -122,8 +124,11 @@ footer {
         display: none;
     }
 
-    h1, h2, h3, .link {
-        font-size: larger
+    h1, .link {
+        font-size: larger;
     }
 
+    h2 {
+        font-size:small;
+    }
 }
