@@ -56,6 +56,10 @@ h1 {
     border-radius: 10px;
 }
 
+.shortcut h2 {
+    margin: 0;
+}
+
 .shortcut .dropdown-content {
     min-width: 150px;
     width: 100%;
@@ -74,8 +78,18 @@ h1 {
 }
 
 /* ----- Content section ----- */
+
+main {
+    margin: 20px auto;
+    max-width: 1000px;
+    text-align: center;
+    margin-top: 5px;
+}
+
 article {
-    margin: 20px;
+    padding: 10px;
+    margin: auto;
+    display: inline-block;
     clear: both;
     text-align: justify;
 }
