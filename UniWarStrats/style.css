@@ -40,7 +40,6 @@ nav {
 }
 
 h1 {
-    font-size: 48px;
     margin: 0;
 }
 
@@ -69,7 +68,6 @@ h1 {
 
 /* ----- Content section ----- */
 article {
-    font-size: 24px;
     margin: 20px;
     clear: both;
     text-align: justify;
@@ -94,7 +92,6 @@ article h2 {
 /* ----- Footer section ----- */
 
 footer {
-    font-size: 22px;
     text-align: center;
     font-weight: 900;
 }
