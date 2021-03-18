@@ -1,31 +1,9 @@
+/* ----- General ----- */
 html,body {
-    font-size: 24px;
     font-family: "Roboto Mono", Arial;
     color: rgb(77, 167, 85);
     background-image: url(stars.png);
-}
-
-header {
-    text-align: center;
-    font-weight: 900;
-}
-
-main {
-    display: flex;
-}
-
-article {
-    clear: both;
-}
-
-footer {
-    font-size: 22px;
-    text-align: center;
-    font-weight: 900;
-}
-
-h1 {
-    font-size: 36px;
+    position: relative;
 }
 
 a {
@@ -37,18 +15,67 @@ a:link {
 }
 
 a:visited {
-    color: rgb(139, 65, 65);
+    color: rgb(133, 72, 72);
 }
 
 a:hover {
     color: rgb(141, 0, 0);
 }
 
-.blog-posts {
+/* ----- Header section ----- */
+header {
+    min-height: 100px;
+    text-align: center;
+}
+
+.link {
+    padding: 20px;
+    font-size:xx-large;
+}
+
+nav {
+    align-content: center;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.shortcut {
+    display: inline-block;
+    position: relative;
+    padding: 0 20px;
+}
+
+.shortcut .dropdown-content {
+    min-width: 150px;
+    width: 100%;
+    display: none;
+    position: absolute;
+    z-index: 1337;
+    left: 0;
+    float: left;
+}
+
+.shortcut:hover .dropdown-content {
+    display: block;
+    left: 0;
+    /*background-image: url(stars.png); */
+    background-color: black;
+}
+
+/* ----- Content section ----- */
+article {
+    font-size: 24px;
+    margin: 20px;
+    clear: both;
     text-align: justify;
 }
 
-.blog-posts h1, h2, h3 {
+article h2 {
     text-align: center;
 }
 
@@ -64,18 +91,10 @@ a:hover {
     height: 290px;
 }
 
-.left {
-    width: 240px;
-    text-align: left;
-    margin: 20px;
-    flex-grow: 0;
-}
+/* ----- Footer section ----- */
 
-.link {
-    padding: 20px;
-}
-
-.mid-right {
-    flex-grow: 1;
-    margin: 20px;
+footer {
+    font-size: 22px;
+    text-align: center;
+    font-weight: 900;
 }
