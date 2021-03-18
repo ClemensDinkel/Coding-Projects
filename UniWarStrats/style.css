@@ -4,6 +4,7 @@ html,body {
     color: rgb(77, 167, 85);
     background-image: url(stars.png);
     position: relative;
+    font-size: 16px;
 }
 
 a {
@@ -29,8 +30,11 @@ header {
 }
 
 .link {
-    padding: 20px;
+    padding: 0 20px;
     font-size:xx-large;
+    border: 1px;
+    border-style: solid;
+    border-radius: 10px;
 }
 
 nav {
@@ -40,13 +44,16 @@ nav {
 }
 
 h1 {
-    margin: 0;
+    margin: 10px;
 }
 
 .shortcut {
     display: inline-block;
     position: relative;
     padding: 0 20px;
+    border: 1px;
+    border-style: solid;
+    border-radius: 10px;
 }
 
 .shortcut .dropdown-content {
@@ -80,13 +87,11 @@ article h2 {
 .image-container-left {
     float: left;
     margin-right:20px;
-    height: 290px;
 }
 
 .image-container-right {
     float: right;
     margin-left: 20px;
-    height: 290px;
 }
 
 /* ----- Footer section ----- */
@@ -94,4 +99,17 @@ article h2 {
 footer {
     text-align: center;
     font-weight: 900;
+}
+
+/* ----- mobiles or small screens ----- */
+
+@media only screen and (max-width: 800px) {
+    .logo {
+        display: none;
+    }
+
+    h1, h2, h3, .link {
+        font-size: larger
+    }
+
 }
