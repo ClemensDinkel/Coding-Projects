@@ -39,7 +39,9 @@ header {
 }
 
 nav {
-    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     font-weight: 900;
     margin-bottom: 10px;
 }
@@ -48,9 +50,14 @@ h1 {
     margin: 10px;
 }
 
+.shortcuts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2px;;
+}
+
 .shortcut {
-    display: inline-block;
-    position: relative;
     padding: 0 10px;
     border: 1px;
     border-style: solid;
@@ -76,7 +83,8 @@ h1 {
     display: block;
     left: 0;
     /*background-image: url(stars.png); */
-    background-color: black;
+    /*background-color: black;*/
+    };
 }
 
 /* ----- Content section ----- */
