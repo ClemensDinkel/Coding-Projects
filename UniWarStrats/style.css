@@ -29,6 +29,14 @@ header {
     text-align: center;
 }
 
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
 .link {
     width: 110px;
     padding: 2px;
@@ -38,14 +46,6 @@ header {
     border-style: solid;
     border-radius: 10px;
     align-self: center;
-}
-
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-weight: 900;
-    margin-bottom: 10px;
 }
 
 h1 {
@@ -60,6 +60,8 @@ h1 {
 }
 
 .shortcut {
+    display: inline-flex;
+    position: relative;
     padding: 0 10px;
     border: 1px;
     border-style: solid;
@@ -72,20 +74,19 @@ h1 {
 }
 
 .shortcut .dropdown-yf, .shortcut .dropdown-mr, .shortcut .dropdown-hl  {
-    margin-top: 2px;
-    min-width: 150px;
+    margin-top: 35px;
     width: 100%;
+    justify-self: center;
     display: none;
     position: absolute;
     z-index: 1337;
     left: 0;
     float: left;
+    border-radius: 10px;;
 }
 
 .shortcut:hover .dropdown-yf, .shortcut:hover .dropdown-mr, .shortcut:hover .dropdown-hl {
     display: block;
-    position: absolute;
-    left: 0;
     background-color: rgba(0, 0, 0, 0.8)
 }
 
@@ -141,10 +142,14 @@ footer {
     h2 {
         font-size:small;
     }
+
+    .shortcut .dropdown-hl, .shortcut .dropdown-mr, .shortcut .dropdown-yf {
+        margin-top: 18px;
+    }
 }
 
-@media only screen and (max-width: 450px) {
-    
+@media only screen and (max-width: 470px) {
+
     .shortcuts {
         flex-direction: column;
         align-content: center;
