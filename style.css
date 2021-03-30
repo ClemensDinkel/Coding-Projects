@@ -4,4 +4,10 @@ html,body {
     color: rgb(77, 167, 85);
     background-color: black;
     text-align: center;
+    
+}
+
+a {
+    text-decoration: none;
+    color: rgb(77, 167, 85);
 }
